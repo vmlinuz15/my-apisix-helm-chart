@@ -1,0 +1,22 @@
+defaultNamespace: apisix
+namespace: apisix
+
+helm:
+  releaseName: apisix
+  chart: .
+  # values:
+  #   replicaCount: 1
+  #   timezone: Asia/Shanghai
+
+  #   service:
+  #     type: NodePort
+
+  #   etcd:
+  #     enabled: true
+  #     replicaCount: 3
+  #     auth:
+  #       rbac:
+  #         create: false
+
+  #   ingress-controller:
+  #     enabled: false
