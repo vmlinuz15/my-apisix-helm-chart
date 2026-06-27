@@ -1,5 +1,5 @@
 defaultNamespace: apisix
-namespace: apisix
+# namespace: apisix
 
 helm:
   releaseName: apisix
