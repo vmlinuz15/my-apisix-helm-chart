@@ -677,7 +677,8 @@ etcd:
   # -- added for backward compatibility with old kubernetes versions, as seccompProfile is not supported in kubernetes < 1.19
   containerSecurityContext:
     enabled: false
-
+  networkPolicy:
+    enable: false
   service:
     port: 2379
 
