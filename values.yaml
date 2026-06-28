@@ -686,7 +686,7 @@ etcd:
     storageClass: local-path
     accessModes:
       - ReadWriteOnce
-    size: 3Gi
+    size: 8Gi
 
   replicaCount: 1
   autoCompactionRetention: "1h"
