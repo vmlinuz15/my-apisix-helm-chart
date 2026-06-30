@@ -678,6 +678,9 @@ etcd:
   containerSecurityContext:
     enabled: false
 
+  nodeSelector:
+    node-role.kubernetes.io/worker: ""
+
   service:
     port: 2379
 
