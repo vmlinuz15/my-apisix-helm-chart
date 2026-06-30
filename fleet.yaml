@@ -4,6 +4,7 @@ defaultNamespace: apisix
 helm:
   releaseName: apisix
   chart: .
+  force: true
   # values:
   #   replicaCount: 1
   #   timezone: Asia/Shanghai
