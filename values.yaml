@@ -679,7 +679,7 @@ etcd:
     enabled: false
 
   nodeSelector:
-    node-role.kubernetes.io/worker: true
+    node-role.kubernetes.io/worker: "true"
 
   service:
     port: 2379
