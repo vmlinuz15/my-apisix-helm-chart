@@ -700,7 +700,7 @@ etcd:
 
 # -- Ingress controller configuration
 ingress-controller:
-  enabled: false
+  enabled: true
   webhook:
     # Specifies whether to enable the validation webhook.
     # Note: This feature relies on the '/apisix/admin/configs/validate' endpoint.
