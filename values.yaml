@@ -350,8 +350,8 @@ apisix:
     # Optional: traditional, data_plane, control_plane
     #
     # ref: https://apisix.apache.org/docs/apisix/deployment-modes/
-    role: "traditional"
-    role_traditional:
+    role: "data_plane"
+    role_data_plane:
       # enum: etcd, yaml
       config_provider: "etcd"
 
@@ -417,11 +417,11 @@ apisix:
         - 0.0.0.0/0
     # -- Using ingress access Apache APISIX admin service
     ingress:
-      enabled: true
+      enabled: false
       # -- Ingress annotations
       annotations:
-        # {}
-        kubernetes.io/ingress.class: "nginx"
+        {}
+        # kubernetes.io/ingress.class: "nginx"
         # kubernetes.io/tls-acme: "true"
       hosts:
         - host: apisix-admin.example.org
