@@ -158,7 +158,7 @@ serviceAccount:
   name: ""
 
 rbac:
-  create: false
+  create: true
 
 service:
   # -- Apache APISIX service type for user access itself
