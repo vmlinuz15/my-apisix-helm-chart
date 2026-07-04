@@ -380,9 +380,9 @@ apisix:
     # -- Enable Embedded Admin UI
     enable_admin_ui: true
     # -- admin service type
-    type: ClusterIP
-    # type: NodePort
-    #nodePort: 31180
+    # type: ClusterIP
+    type: NodePort
+    nodePort: 31180
     #loadBalancerIP: 192.168.139.241
     # loadBalancerSourceRanges:
     #   - "143.231.0.0/16"
@@ -418,11 +418,11 @@ apisix:
         - 0.0.0.0/0
     # -- Using ingress access Apache APISIX admin service
     ingress:
-      enabled: true
+      enabled: false
       # -- Ingress annotations
       annotations:
-       # {}
-        kubernetes.io/ingress.class: "apisix"
+        {}
+        # kubernetes.io/ingress.class: "apisix"
         # kubernetes.io/tls-acme: "true"
       hosts:
         - host: apisix-admin.example.org
