@@ -497,7 +497,7 @@ apisix:
     enabled: true
     # -- Service discovery registry. Refer to [configuration under discovery](https://github.com/apache/apisix/blob/master/conf/config.yaml.example#L307) for example.
     # Also see [example of using external service discovery](https://apisix.apache.org/docs/ingress-controller/1.8.0/tutorials/external-service-discovery/).
-    kubernetes: {}
+    kubernetes: { }
     #registry: 
        #dns:
         #servers:
