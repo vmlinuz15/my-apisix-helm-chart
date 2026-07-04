@@ -162,12 +162,13 @@ rbac:
 
 service:
   # -- Apache APISIX service type for user access itself
-  type: NodePort
+  type: LoadBalancer
   # -- Setting how the Service route external traffic
   # If you want to keep the client source IP, you can set this to Local.
 
   # ref: https://kubernetes.io/docs/tasks/access-application-cluster/create-external-load-balancer/#preserving-the-client-source-ip
-  externalTrafficPolicy: Cluster
+  externalTrafficPolicy: Local
+  # loadBalancerIP: 192.168.31.240
   # type: LoadBalancer
   # annotations:
   #   service.beta.kubernetes.io/aws-load-balancer-type: nlb
@@ -379,10 +380,10 @@ apisix:
     # -- Enable Embedded Admin UI
     enable_admin_ui: true
     # -- admin service type
-    # type: ClusterIP
-    type: NodePort
-    nodePort: 31180
-    # loadBalancerIP: a.b.c.d
+    type: ClusterIP
+    # type: NodePort
+    #nodePort: 31180
+    #loadBalancerIP: 192.168.139.241
     # loadBalancerSourceRanges:
     #   - "143.231.0.0/16"
     # -- IPs for which nodes in the cluster will also accept traffic for the servic
