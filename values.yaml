@@ -345,14 +345,14 @@ apisix:
     # Optional: traditional, decoupled, standalone
     #
     # ref: https://apisix.apache.org/docs/apisix/deployment-modes/
-    mode: traditional
+    mode: control_plane
 
     # -- Deployment role
     # Optional: traditional, data_plane, control_plane
     #
     # ref: https://apisix.apache.org/docs/apisix/deployment-modes/
-    role: "traditional"
-    role_traditional:
+    role: "control_plane"
+    role_control_plane:
       # enum: etcd, yaml
       config_provider: "etcd"
 
