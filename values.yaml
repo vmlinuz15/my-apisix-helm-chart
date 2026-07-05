@@ -345,7 +345,7 @@ apisix:
     # Optional: traditional, decoupled, standalone
     #
     # ref: https://apisix.apache.org/docs/apisix/deployment-modes/
-    mode: decoupled
+    mode: traditional
 
     # -- Deployment role
     # Optional: traditional, data_plane, control_plane
