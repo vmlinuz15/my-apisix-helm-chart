@@ -501,7 +501,11 @@ apisix:
     # Also see [example of using external service discovery](https://apisix.apache.org/docs/ingress-controller/1.8.0/tutorials/external-service-discovery/).
     
     registry: 
-      kubernetes: {}
+      kubernetes: 
+        service: 
+          schema: https
+          host: ${KUBERNETES_SERVICE_HOST}
+          port: ${KUBERNETES_SERVICE_PORT}
        #dns:
         #servers:
           #- "10.43.0.10:53"
