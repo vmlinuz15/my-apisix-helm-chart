@@ -351,8 +351,8 @@ apisix:
     # Optional: traditional, data_plane, control_plane
     #
     # ref: https://apisix.apache.org/docs/apisix/deployment-modes/
-    role: "data_plane"
-    role_data_plane:
+    role: "control_plane"
+    role_control_plane:
       # enum: etcd, yaml
       config_provider: "etcd"
 
