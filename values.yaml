@@ -506,6 +506,8 @@ apisix:
           schema: https
           host: ${KUBERNETES_SERVICE_HOST}
           port: ${KUBERNETES_SERVICE_PORT}
+        client:
+          token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
        #dns:
         #servers:
           #- "10.43.0.10:53"
