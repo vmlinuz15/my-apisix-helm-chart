@@ -427,7 +427,7 @@ apisix:
       hosts:
         - host: apisix-admin.example.org
           paths:
-            -  "/"
+            -  "/apisix"
 
       tls: []
     #  - secretName: apisix-tls
