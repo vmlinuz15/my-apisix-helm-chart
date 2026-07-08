@@ -719,6 +719,8 @@ etcd:
 # -- Ingress controller configuration
 ingress-controller:
   enabled: true
+  config:
+    execADCTimeout: "60s"
   gatewayProxy:
     createDefault: true
     provider:
