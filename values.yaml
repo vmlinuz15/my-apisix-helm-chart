@@ -719,6 +719,16 @@ etcd:
 # -- Ingress controller configuration
 ingress-controller:
   enabled: true
+  gatewayProxy:
+    createDefault: true
+    provider:
+      controlPlane:
+        service:
+          name: apisix-admin
+          port: 9180
+        auth:
+          adminKey:
+            value: "edd1c9f034335f136f87ad84b625c8f1"
   webhook:
     # Specifies whether to enable the validation webhook.
     # Note: This feature relies on the '/apisix/admin/configs/validate' endpoint.
