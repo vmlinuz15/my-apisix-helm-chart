@@ -418,7 +418,7 @@ apisix:
         - 0.0.0.0/0
     # -- Using ingress access Apache APISIX admin service
     ingress:
-      enabled: true
+      enabled: false
       # -- Ingress annotations
       annotations:
         # {}
